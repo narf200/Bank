@@ -1,0 +1,60 @@
+.comingDays {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 70px 2fr;
+
+    color: #edf2f6;
+    background-color: #3f4257;
+    width: 1350px;
+    height: 220px;
+    grid-template-areas:
+    "c5d c5d c5d c5d c5d"
+    "do dtw dt df dfv";
+}
+
+.coming5DaysItems {
+    grid-area: c5d;
+    background-color: #3f4257;
+    color: #edf2f6;
+    text-align: center;
+    height: 30px;
+    grid-template-areas:
+    "c5dn"
+}
+
+
+.dayOne{
+    grid-area: do;
+    background-color: #3f4257;
+    color: #edf2f6;
+    text-align: center;
+}
+
+.dayTwo{
+    grid-area: dtw;
+    background-color: #3f4257;
+    color: #edf2f6;
+    text-align: center;
+}
+
+.dayThree{
+    grid-area: dt;
+    background-color: #3f4257;
+    color: #edf2f6;
+    text-align: center;
+}
+
+.dayFour{
+    grid-area: df;
+    background-color: #3f4257;
+    color: #edf2f6;
+    text-align: center;
+}
+
+.dayFive{
+    grid-area: dfv;
+    background-color: #3f4257;
+    color: #edf2f6;
+    text-align: center;
+}
+

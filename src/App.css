@@ -1,0 +1,18 @@
+.app-wrapper {
+  display: grid;
+  width: 1450px;
+  margin: 0 auto;
+  grid-gap: 5px;
+  grid-template-rows: 1fr 8fr;
+  background-color: #3f4257;
+  grid-template-areas:
+  "h"
+  "w";
+}
+
+.weather {
+  grid-area: w;
+}
+
+
+

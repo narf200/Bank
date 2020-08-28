@@ -1,0 +1,20 @@
+.RealFeelItems {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 2fr 2fr;
+    justify-items: center;
+    grid-gap: 5px;
+    color: #edf2f6;
+    margin-top: 5px;
+    grid-template-areas:
+    "rn"
+    "ri";
+}
+
+.RealFeelName {
+    grid-area: rn;
+}
+
+.RealFeelItem {
+    grid-area: ri;
+}

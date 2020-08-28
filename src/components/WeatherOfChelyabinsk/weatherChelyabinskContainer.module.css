@@ -1,0 +1,24 @@
+.weatherChelyabinskContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 5px;
+    color: #edf2f6;
+    margin-top: 5px;
+    background-color: #3f4257;
+    grid-area: wochc;
+    grid-template-areas:
+    "wch"
+     "w5d";
+}
+
+.weatherChelyabinsk {
+    grid-area: wch;
+    height: 300px;
+}
+
+.Weather5Day {
+    grid-area: w5d;
+    margin-top: 5px;
+}

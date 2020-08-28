@@ -1,0 +1,23 @@
+
+.mainTempItem {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 2fr 2fr;
+    grid-area: wch;
+    justify-items: center;
+    grid-gap: 5px;
+    color: #edf2f6;
+    margin-top: 5px;
+    grid-template-areas:
+    "mn"
+    "mi ";
+}
+
+.mainName {
+    grid-area: mn;
+}
+
+
+.mainItem {
+    grid-area: mi;
+}

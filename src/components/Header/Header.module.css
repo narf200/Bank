@@ -1,0 +1,29 @@
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr ;
+  justify-items: center;
+  grid-area: h;
+  background-color: #3f4257;
+  grid-template-areas:
+  "cn t h3";
+  height: 75px;
+
+}
+
+.cityName {
+  grid-area: cn;
+  background-color: #3f4257;
+}
+
+
+.today{
+  grid-area: t;
+  background-color: #3f4257;
+  color: #edf2f6;
+}
+
+.hours3{
+  grid-area: h3;
+  background-color: #3f4257;
+  color: #edf2f6;
+}
