@@ -1,0 +1,14 @@
+.footerItem{
+    display: grid;
+    grid-template-rows: 1fr;
+    color: #edf2f6;
+    background-color: #3f4257;
+    grid-template-areas:
+    "fi";
+}
+
+.footerImg{
+    grid-area: fi;
+    width: 100%;
+    object-fit: cover;
+}

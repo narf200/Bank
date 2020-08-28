@@ -1,12 +1,9 @@
 .weatherChelyabinskContainer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    grid-gap: 5px;
+    grid-template-rows: 1fr;
     color: #edf2f6;
-    margin-top: 5px;
     background-color: #3f4257;
+    border: 2px solid black;
     grid-area: wochc;
     grid-template-areas:
     "wch"
@@ -15,10 +12,8 @@
 
 .weatherChelyabinsk {
     grid-area: wch;
-    height: 300px;
 }
 
 .Weather5Day {
     grid-area: w5d;
-    margin-top: 5px;
 }

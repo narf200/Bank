@@ -6,7 +6,7 @@ const Weather5Day = (props) => {
     return (
             <div className={s.comingDays}>
                 <div className={s.coming5DaysItems}>
-                    в ближайшие 5 дней
+                    в ближайшие 3 часа
                 </div>
                 <div className={s.dayOne}>
                     <div>
@@ -18,16 +18,25 @@ const Weather5Day = (props) => {
 
                 </div>
                 <div className={s.dayTwo}>
-                    26.08
+                    <div>
+                        {props.Weather5Day[0].dt_txt}
+                    </div>
+                    <div>
+                        {props.Weather5Day[0].main.temp}
+                    </div>
                 </div>
                 <div className={s.dayThree}>
-                    27.08
+                    <div>
+                        {props.Weather5Day[0].dt_txt}
+                    </div>
+                    <div>
+                        {props.Weather5Day[0].main.temp}
+                    </div>
                 </div>
-                <div className={s.dayFour}>
-                    29.08
-                </div>
-                <div className={s.dayFive}>
-                    30.08
+                <div className={s.nextHours}>
+                    <button>
+                        следующие 3 часа
+                    </button>
                 </div>
         </div>
 

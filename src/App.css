@@ -1,17 +1,42 @@
-.app-wrapper {
+.App-wrapper {
   display: grid;
-  width: 1450px;
-  margin: 0 auto;
-  grid-gap: 5px;
-  grid-template-rows: 1fr 8fr;
+  grid-template-rows: 1fr;
+  background-color: #3f4257;
+  grid-template-areas:
+  "rai";
+}
+
+.RequestApiItems {
+  grid-area: rai;
+  background-color: #3f4257;
+  border: 2px solid black;
+}
+
+
+
+
+
+.app-wrapperAfterRequest {
+  display: grid;
+  grid-template-rows: 2fr 12fr 1fr;
   background-color: #3f4257;
   grid-template-areas:
   "h"
-  "w";
+  "w"
+  "f";
 }
 
 .weather {
   grid-area: w;
+  background-color: #3f4257;
+  border: 2px solid black;
+}
+
+.footer{
+  grid-area: f;
+  background-color: #3f4257;
+  border: 2px solid black;
+
 }
 
 

@@ -1,29 +1,22 @@
 .header {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr ;
-  justify-items: center;
+  grid-template-columns: 3fr   ;
   grid-area: h;
   background-color: #3f4257;
+  color: #edf2f6;
   grid-template-areas:
-  "cn t h3";
-  height: 75px;
+  "cn";
+ height: 75px;
 
 }
 
 .cityName {
   grid-area: cn;
+  text-align: center;
+  line-height: 75px;
   background-color: #3f4257;
+  border: 2px solid black;
+
 }
 
 
-.today{
-  grid-area: t;
-  background-color: #3f4257;
-  color: #edf2f6;
-}
-
-.hours3{
-  grid-area: h3;
-  background-color: #3f4257;
-  color: #edf2f6;
-}

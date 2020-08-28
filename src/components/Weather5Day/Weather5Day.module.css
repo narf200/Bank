@@ -1,15 +1,13 @@
 .comingDays {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 70px 2fr;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     color: #edf2f6;
     background-color: #3f4257;
-    width: 1350px;
-    height: 220px;
     grid-template-areas:
-    "c5d c5d c5d c5d c5d"
-    "do dtw dt df dfv";
+    "c5d c5d c5d"
+    "do dtw dt"
+    "nxth nxth nxth";
 }
 
 .coming5DaysItems {
@@ -17,9 +15,9 @@
     background-color: #3f4257;
     color: #edf2f6;
     text-align: center;
-    height: 30px;
-    grid-template-areas:
-    "c5dn"
+    line-height: 60px;
+    border: 2px solid black;
+
 }
 
 
@@ -28,6 +26,8 @@
     background-color: #3f4257;
     color: #edf2f6;
     text-align: center;
+    border: 2px solid black;
+    padding-top: 5%;
 }
 
 .dayTwo{
@@ -35,6 +35,8 @@
     background-color: #3f4257;
     color: #edf2f6;
     text-align: center;
+    border: 2px solid black;
+    padding-top: 5%;
 }
 
 .dayThree{
@@ -42,19 +44,15 @@
     background-color: #3f4257;
     color: #edf2f6;
     text-align: center;
+    border: 2px solid black;
+    padding-top: 5%;
 }
 
-.dayFour{
-    grid-area: df;
+.nextHours{
+    grid-area: nxth;
     background-color: #3f4257;
     color: #edf2f6;
     text-align: center;
+    border: 2px solid black;
+    padding-top: 1%;
 }
-
-.dayFive{
-    grid-area: dfv;
-    background-color: #3f4257;
-    color: #edf2f6;
-    text-align: center;
-}
-

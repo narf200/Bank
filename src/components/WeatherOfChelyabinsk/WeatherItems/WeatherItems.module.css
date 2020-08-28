@@ -2,10 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 2fr;
-    justify-items: center;
-    grid-gap: 5px;
     color: #edf2f6;
-    margin-top: 5px;
     background-color: #3f4257;
     grid-template-areas:
     "mmt mt dw"
@@ -16,7 +13,9 @@
 .maxMinTemperature {
     grid-area: mmt;
     background-color: #3f4257;
-    width: 400px;
+    border: 2px solid black;
+    text-align: center;
+
 }
 
 
@@ -24,32 +23,35 @@
 .mainTemperature {
     grid-area: mt;
     background-color: #3f4257;
-    height: 200px;
-    width: 500px;
+    text-align: center;
+    border: 2px solid black;
+
 }
 
 .dayOfWeek {
     grid-area: dw;
     background-color: #3f4257;
+    text-align: center;
+    border: 2px solid black;
 }
 
 .realFeel {
     grid-area: rf;
     background-color: #3f4257;
-    width: 100px;
-    height: 80px;
+    border: 2px solid black;
+    text-align: center;
 }
 
 .chanceOfRain {
     grid-area: cr;
     background-color: #3f4257;
-    width: 100px;
-    height: 80px;
+    border: 2px solid black;
+    text-align: center;
 }
 
 .windSpeed {
     grid-area: ws;
     background-color: #3f4257;
-    width: 100px;
-    height: 80px;
+    border: 2px solid black;
+    text-align: center;
 }

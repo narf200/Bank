@@ -1,18 +1,15 @@
 .weatherOfChelyabinskItems {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px;
-    justify-items: center;
-    grid-gap: 5px;
+    grid-template-rows: 1fr;
     color: #edf2f6;
-    margin-top: 5px;
     grid-template-areas:
-    "we";
-
+    "wi";
 }
 
-.weatherElements {
-    grid-area: we;
+.weatherItems {
+    grid-area: wi;
+    border: 2px solid black;
 }
 
 
