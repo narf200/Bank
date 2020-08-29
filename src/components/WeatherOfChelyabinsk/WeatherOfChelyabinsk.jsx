@@ -7,10 +7,16 @@ const WeatherOfChelyabinsk = (props) => {
     return (
         <div className={s.weatherOfChelyabinskItems}>
             <div className={s.weatherItems}>
-                <WeatherItems main={props.testWeather.main} wind={props.testWeather.wind} dayWeek={props.testWeather.dayWeek} Weather5Day={props.Weather5Day}/>
+                <WeatherItems
+                    main={props.testWeather.main}
+                    wind={props.testWeather.wind}
+                    dayWeek={props.testWeather.dayWeek}
+                    Weather5Day={props.Weather5Day}
+                />
             </div>
         </div>
     )
 }
 
 export default WeatherOfChelyabinsk
+

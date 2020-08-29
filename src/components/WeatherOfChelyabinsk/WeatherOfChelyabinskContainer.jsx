@@ -1,39 +1,63 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getWeatherThunkCreator, setTestWeatherChelyabinsk, getWeather5DayThunkCreator} from "../../redux/WeatherChelyabinskReducer";
+import {
+    getWeatherThunkCreator,
+    getWeather5DayThunkCreator,
+    getToggleIsFetchingThunkCreator
+} from "../../redux/WeatherChelyabinskReducer";
 import WeatherOfChelyabinsk from "./WeatherOfChelyabinsk";
 import Weather5Day from "../Weather5Day/Weather5Day";
 import s from "./weatherChelyabinskContainer.module.css"
+import Spinner from "../../assets/images/Spinner.svg"
+import Preloader from "../../common/Preloader/Preloader";
 
 
 class WeatherOfChelyabinskContainer extends React.Component {
 
     componentDidMount(props) {
         this.props.getWeatherThunkCreator();
-        this.props.getWeather5DayThunkCreator()
+        this.props.getWeather5DayThunkCreator();
+        this.props.getToggleIsFetchingThunkCreator();
+
 
     }
 
     render() {
         return (
-        <div className={s.weatherChelyabinskContainer}>
-            <div className={s.weatherChelyabinsk}>
-                <WeatherOfChelyabinsk testWeather={this.props.testWeather} Weather5Day={this.props.Weather5Day}/>
-            </div>
-            <div className={s.Weather5Day}>
-                <Weather5Day Weather5Day={this.props.Weather5Day}/>
-            </div>
+            <>
+                {this.props.isFetching ?
+                    <div className={s.weatherChelyabinskContainer}>
 
-        </div>)
+                        <div className={s.weatherChelyabinsk}>
+                            <WeatherOfChelyabinsk
+                                testWeather={this.props.Weather}
+                                Weather5Day={this.props.Weather5Day}/>
+                        </div>
+
+
+                        <div className={s.Weather5Day}>
+                            <Weather5Day
+                                Weather5Day={this.props.Weather5Day}/>
+                        </div>
+
+                    </div>
+                    : <Preloader/>}
+            </>
+        )
 
     }
 
 }
 
 let mapStateToProps = (state) => ({
-    testWeather: state.weatherChelyabinskPage.testWeather,
-    Weather5Day: state.weatherChelyabinskPage.Weather5Day
+    Weather: state.weatherChelyabinskPage.Weather,
+    Weather5Day: state.weatherChelyabinskPage.Weather5Day,
+    isFetching: state.weatherChelyabinskPage.isFetching
 })
 
-export default  connect(mapStateToProps, {setTestWeatherChelyabinsk, getWeatherThunkCreator, getWeather5DayThunkCreator})(WeatherOfChelyabinskContainer)
+export default connect(mapStateToProps, {
+    getWeatherThunkCreator,
+    getWeather5DayThunkCreator,
+    getToggleIsFetchingThunkCreator
+})(WeatherOfChelyabinskContainer)
 
