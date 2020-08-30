@@ -8,7 +8,6 @@ import {
 import WeatherOfChelyabinsk from "./WeatherOfChelyabinsk";
 import Weather5Day from "../Weather5Day/Weather5Day";
 import s from "./weatherChelyabinskContainer.module.css"
-import Spinner from "../../assets/images/Spinner.svg"
 import Preloader from "../../common/Preloader/Preloader";
 
 

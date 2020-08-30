@@ -4,7 +4,7 @@ import Spinner from "../../assets/images/Spinner.svg";
 const Preloader = (props) => {
     return (
         <div>
-            <img src={Spinner}/>
+            <img src={Spinner} alt={"spinner"}/>
         </div>
     )
 }
