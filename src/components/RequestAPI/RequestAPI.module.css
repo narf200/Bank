@@ -2,15 +2,16 @@
     display: grid;
     grid-area: rai;
     grid-template-rows: 1fr 1fr;
-    justify-items: center;
     color: #edf2f6;
+    background-color: #3f4257;
+    text-align: center;
     grid-template-areas:
-    "I"
+    "i"
     "b";
 }
 
 .Input {
-    grid-area: I;
+    grid-area: i;
     background-color: #3f4257;
     text-align: center;
 }
