@@ -14,10 +14,10 @@ export const weatherNowApi = {
 }
 
 export const weather5DayApi = {
-    getWeather5Day(day=1) {
+    getWeather5Day(day=2) {
         return instance.get(`forecast?lat=55.1544&lon=61.4297&units=metric&appid=9b0cb4aa82a4f56732e2b89b3a933f8f`)
             .then(response => {
-                return response.data.list.slice(8*(day-1), 8*(day-1)+7)
+                return response.data.list.slice(8*(day-1), 8*(day-1)+8)
             })
     }
 }

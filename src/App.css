@@ -1,27 +1,12 @@
+
 .App-wrapper {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 10fr;
   background-color: #3f4257;
-  grid-template-areas:
-  "rai";
-}
-
-.RequestApiItems {
-  grid-area: rai;
-  background-color: #3f4257;
-  border: 2px solid black;
-}
-
-
-
-
-
-.app-wrapperAfterRequest {
-  display: grid;
-  grid-template-rows: 2fr 12fr 1fr;
-  background-color: #3f4257;
+  max-height: 1000px;
   grid-template-areas:
   "h"
+  "rai"
   "w"
   "f";
 }
@@ -32,12 +17,6 @@
   border: 2px solid black;
 }
 
-.footer{
-  grid-area: f;
-  background-color: #3f4257;
-  border: 2px solid black;
-
-}
 
 
 

@@ -1,5 +1,6 @@
 .footerItem{
     display: grid;
+    grid-area: f;
     grid-template-rows: 1fr;
     color: #edf2f6;
     background-color: #3f4257;

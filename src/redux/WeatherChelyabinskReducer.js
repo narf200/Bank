@@ -12,7 +12,14 @@ let initialState = {
         wind: {speed: 3 }
     },
     Weather5Day: [
-        {main:{temp:-5}}
+        {main:{temp:+19}},
+        {main:{temp:+17}},
+        {main:{temp:+22}},
+        {main:{temp:+21}},
+        {main:{temp:+15}},
+        {main:{temp:+13}},
+        {main:{temp:+10}},
+        {main:{temp:+17}},
         ],
     isFetching: false
 

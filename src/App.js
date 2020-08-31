@@ -1,27 +1,21 @@
 import React from 'react';
+import {Route} from "react-router";
 import './App.css';
 import Header from "./components/Header/Header";
-import WeatherOfChelyabinskContainer from "./components/WeatherOfChelyabinsk/WeatherOfChelyabinskContainer";
-import {Route} from "react-router";
 import Footer from "./components/Footer/Footer";
-import RequestAPI from "./components/RequestAPI/RequestAPI";
+import RequestAPIContainer from "./components/RequestAPI/RequestAPIContainer";
+import WeatherOfChelyabinskContainer from "./components/WeatherOfChelyabinsk/WeatherOfChelyabinskContainer";
 
 function App() {
     return (
-        <div className={"App-wrapper"}>
-            <div className="RequestApiItems">
-                <Route path="/requestAPI" render={() => <RequestAPI/>}/>
+        <div className="App-wrapper">
+            <Header/>
+            <RequestAPIContainer/>
+            <div className="weather">
+                <Route path="/weatherofchelyabinsk" render={() => <WeatherOfChelyabinskContainer/>}/>
             </div>
-            <div className="App-wrapperAfterRequest">
-                <Header/>
-                <div className="weather">
-                    <Route path="/weatherofchelyabinsk" render={() => <WeatherOfChelyabinskContainer/>}/>
-                </div>
-                <Footer />
-            </div>
+            <Footer/>
         </div>
-
-
     );
 }
 

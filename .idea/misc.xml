@@ -3,4 +3,10 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="JSX" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/src/components/Weather5Day/DayFive.jsx" />
+    <file url="file://$PROJECT_DIR$/src/components/Weather5Day/DayFour.jsx" />
+    <file url="file://$PROJECT_DIR$/src/components/Weather5Day/DayThree.jsx" />
+    <file url="file://$PROJECT_DIR$/src/components/Weather5Day/DayTwo.jsx" />
+  </component>
 </project>

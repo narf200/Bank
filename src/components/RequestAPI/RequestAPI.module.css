@@ -1,17 +1,23 @@
 .RequestAPIItems {
     display: grid;
-    grid-template-rows: 2fr;
+    grid-area: rai;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
-    grid-gap: 5px;
     color: #edf2f6;
-    margin-top: 5px;
     grid-template-areas:
-    "I";
+    "I"
+    "b";
 }
 
 .Input {
     grid-area: I;
     background-color: #3f4257;
-    border: 2px solid black;
     text-align: center;
+}
+
+.button {
+    grid-area: b;
+    background-color: #3f4257;
+    text-align: center;
+
 }

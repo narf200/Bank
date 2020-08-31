@@ -14,6 +14,7 @@ import Preloader from "../../common/Preloader/Preloader";
 class WeatherOfChelyabinskContainer extends React.Component {
 
     componentDidMount(props) {
+        console.log(props)
         this.props.getWeatherThunkCreator();
         this.props.getWeather5DayThunkCreator();
         this.props.getToggleIsFetchingThunkCreator();
