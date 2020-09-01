@@ -1,6 +1,6 @@
 import RequestAPI from "./RequestAPI";
 import {connect} from "react-redux";
-import {sendApikeyCreator, updateNewApiKeyCreator,} from "../../redux/RequestAPIReducer/RequestAPIReducer";
+import { updateNewApiKeyCreator} from "../../redux/RequestAPIReducer/RequestAPIReducer";
 
 
 let mapStateToProps = (state) => {
@@ -11,9 +11,6 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => {
     return {
-        sendApikey: () => {
-            dispatch(sendApikeyCreator())
-        },
         updateNewApiKey: (body) => {
             dispatch(updateNewApiKeyCreator(body))
         }

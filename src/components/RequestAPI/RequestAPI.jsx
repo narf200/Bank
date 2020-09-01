@@ -1,18 +1,25 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import s from "./RequestAPI.module.css"
+import {init} from "../../api/api";
 
 const RequestAPI = (props) => {
     console.log(props)
 
     let newApikeyBody = props.requestApiPage.newApiKeyBodyState
 
+  const history = useHistory();
+
+
+
     let onSendApiKeyClick = () => {
-        props.sendApikey()
+        init(newApikeyBody)
+        history.push("/weatherofchelyabinsk");
     }
 
     let onNewApiKeyChange = (e) => {
         let body = e.target.value;
-        props.updateNewApiKey(body)
+         props.updateNewApiKey(body)
     }
 
     return (

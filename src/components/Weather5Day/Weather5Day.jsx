@@ -1,8 +1,17 @@
 import React from "react";
 import s from "./DayOne.module.css";
 
+
 const Weather5Day = (props) => {
-    console.log(props)
+
+    let onClickPage = (e) => {
+        e.preventDefault()
+        props.getWeather5DayThunkCreator(
+        Number(e.target.innerText)
+        )
+
+    }
+
     return (
         <div className={s.comingDays}>
             <div className={s.coming5DaysItems}>
@@ -73,11 +82,14 @@ const Weather5Day = (props) => {
                 </div>
             </div>
             <div className={s.nextDays}>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
+                <ul>
+                    <li > <a href="1" onClick={onClickPage} role="button" onKeyPress={onClickPage}>1</a></li>
+                    <li><a href="2" onClick={onClickPage} role="button" onKeyPress={onClickPage}>2</a></li>
+                    <li><a href="3" onClick={onClickPage} role="button" onKeyPress={onClickPage}>3</a></li>
+                    <li><a href="4" onClick={onClickPage} role="button" onKeyPress={onClickPage}>4</a></li>
+                    <li><a href="5" onClick={onClickPage} role="button" onKeyPress={onClickPage}>5</a></li>
+                </ul>
+               
             </div>
         </div>
 

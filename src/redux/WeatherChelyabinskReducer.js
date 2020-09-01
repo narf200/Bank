@@ -21,7 +21,7 @@ let initialState = {
         {main:{temp:+10}},
         {main:{temp:+17}},
         ],
-    isFetching: false
+    isFetching: true
 
 
 };
@@ -36,6 +36,7 @@ const weatherChelyabinskReducer = (state = initialState, action) => {
             return {...state, Weather5Day: action.Weather5Day}
         }
         case TOGGLE_IS_FETCHING: {
+
             return {...state, isFetching: action.isFetching}
         }
         default:
@@ -54,34 +55,34 @@ export const getWeatherThunkCreator = () => {
     return (dispatch) => {
         dispatch(setToggleIsFetching(true))
         weatherNowApi.getWeatherChelyabinsk()
-            .then(testWeather => {
+            .then(Weather => {
+                dispatch(setWeatherChelyabinsk(Weather))
                 dispatch(setToggleIsFetching(false))
-                dispatch(setWeatherChelyabinsk(testWeather))
             })
     }
 }
 
 
-export const getWeather5DayThunkCreator = () => {
+export const getWeather5DayThunkCreator = (day = 1) => {
     return (dispatch) => {
         dispatch(setToggleIsFetching(true))
-        weather5DayApi.getWeather5Day()
+        weather5DayApi.getWeather5Day(day)
             .then(Weather5Day => {
-                dispatch(setToggleIsFetching(false))
                 dispatch(setWeather5Day(Weather5Day))
+                dispatch(setToggleIsFetching(false))
             })
     }
 }
 
 
-export const getToggleIsFetchingThunkCreator = () => {
-    return (dispatch) => {
-        weather5DayApi.getWeather5Day()
-            .then(isFetching => {
-                dispatch(setToggleIsFetching(isFetching))
-            })
-    }
-}
+// export const getToggleIsFetchingThunkCreator = () => {
+//     return (dispatch) => {
+//         weather5DayApi.getWeather5Day()
+//             .then(isFetching => {
+//                 dispatch(setToggleIsFetching(isFetching))
+//             })
+//     }
+// }
 
 
 export default weatherChelyabinskReducer;
