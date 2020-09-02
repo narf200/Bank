@@ -75,14 +75,5 @@ export const getWeather5DayThunkCreator = (day = 1) => {
 }
 
 
-// export const getToggleIsFetchingThunkCreator = () => {
-//     return (dispatch) => {
-//         weather5DayApi.getWeather5Day()
-//             .then(isFetching => {
-//                 dispatch(setToggleIsFetching(isFetching))
-//             })
-//     }
-// }
-
 
 export default weatherChelyabinskReducer;

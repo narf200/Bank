@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./DayOne.module.css";
+import s from "./Weather5Day.module.css";
 
 
 const Weather5Day = (props) => {
@@ -82,18 +82,13 @@ const Weather5Day = (props) => {
                 </div>
             </div>
             <div className={s.nextDays}>
-                <ul>
-                    <li > <a href="1" onClick={onClickPage} role="button" onKeyPress={onClickPage}>1</a></li>
-                    <li><a href="2" onClick={onClickPage} role="button" onKeyPress={onClickPage}>2</a></li>
-                    <li><a href="3" onClick={onClickPage} role="button" onKeyPress={onClickPage}>3</a></li>
-                    <li><a href="4" onClick={onClickPage} role="button" onKeyPress={onClickPage}>4</a></li>
-                    <li><a href="5" onClick={onClickPage} role="button" onKeyPress={onClickPage}>5</a></li>
-                </ul>
-               
+                    <span className={s.listItem1}><a className={s.aItem1} href="1" onClick={onClickPage} role="button" onKeyPress={onClickPage}>1</a></span >
+                    <span сlassName={s.listItem2}><a className={s.aItem2} href="2" onClick={onClickPage} role="button" onKeyPress={onClickPage}>2</a></span >
+                    <span сlassName={s.listItem3}><a className={s.aItem3} href="3" onClick={onClickPage} role="button" onKeyPress={onClickPage}>3</a></span >
+                    <span сlassName={s.listItem4}><a className={s.aItem4} href="4" onClick={onClickPage} role="button" onKeyPress={onClickPage}>4</a></span >
+                    <span сlassName={s.listItem5}><a className={s.aItem5} href="5" onClick={onClickPage} role="button" onKeyPress={onClickPage}>5</a></span >
             </div>
         </div>
-
-
     )
 }
 

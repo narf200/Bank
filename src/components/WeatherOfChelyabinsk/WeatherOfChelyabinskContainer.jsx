@@ -9,14 +9,12 @@ import Weather5Day from "../Weather5Day/Weather5Day";
 import s from "./weatherChelyabinskContainer.module.css"
 import Preloader from "../../common/Preloader/Preloader";
 
-// getToggleIsFetchingThunkCreator
 
 class WeatherOfChelyabinskContainer extends React.Component {
 
     componentDidMount() {
         this.props.getWeatherThunkCreator();
         this.props.getWeather5DayThunkCreator();
-        // this.props.getToggleIsFetchingThunkCreator();
     }
 
     render() {
@@ -50,7 +48,6 @@ let mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps, {
     getWeatherThunkCreator,
-    getWeather5DayThunkCreator,
-    // getToggleIsFetchingThunkCreator
+    getWeather5DayThunkCreator
 })(WeatherOfChelyabinskContainer)
 

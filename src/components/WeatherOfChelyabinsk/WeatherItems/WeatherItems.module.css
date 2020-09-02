@@ -13,7 +13,7 @@
 .maxMinTemperature {
     grid-area: mmt;
     background-color: #3f4257;
-    border: 2px solid black;
+    border: 2px solid rgba(0,0,0,0.3);
     text-align: center;
 
 }
@@ -24,7 +24,7 @@
     grid-area: mt;
     background-color: #3f4257;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid rgba(0,0,0,0.3);
 
 }
 
@@ -32,26 +32,26 @@
     grid-area: dw;
     background-color: #3f4257;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid rgba(0,0,0,0.3);
 }
 
 .realFeel {
     grid-area: rf;
     background-color: #3f4257;
-    border: 2px solid black;
+    border: 2px solid rgba(0,0,0,0.3);
     text-align: center;
 }
 
 .chanceOfRain {
     grid-area: cr;
     background-color: #3f4257;
-    border: 2px solid black;
+    border: 2px solid rgba(0,0,0,0.3);
     text-align: center;
 }
 
 .windSpeed {
     grid-area: ws;
     background-color: #3f4257;
-    border: 2px solid black;
+    border: 2px solid rgba(0,0,0,0.3);
     text-align: center;
 }

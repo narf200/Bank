@@ -32,7 +32,7 @@ export const init = (ApiKey) => {
     apiKey = ApiKey
 }
 
-export const inited = () => {
+export const isInit = () => {
     return !(apiKey === null)
 }
 
