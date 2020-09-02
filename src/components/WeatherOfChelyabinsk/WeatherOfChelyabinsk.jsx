@@ -1,8 +1,13 @@
 import React from "react";
 import s from "./WeatherOfChelyabinsk.module.css";
 import WeatherItems from "./WeatherItems/WeatherItems";
+import Preloader from "../../common/Preloader/Preloader";
 
 const WeatherOfChelyabinsk = (props) => {
+
+    if (props.isFetching) {
+        return <Preloader/>
+    }
 
     return (
         <div className={s.weatherOfChelyabinskItems}>

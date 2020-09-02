@@ -19,19 +19,21 @@ class WeatherOfChelyabinskContainer extends React.Component {
 
     render() {
 
-        if (this.props.isFetching) {
-            return <Preloader/>
-        }
+
 
         return <div className={s.weatherChelyabinskContainer}>
             <div className={s.weatherChelyabinsk}>
                 <WeatherOfChelyabinsk
                     testWeather={this.props.Weather}
-                    Weather5Day={this.props.Weather5Day}/>
+                    Weather5Day={this.props.Weather5Day}
+                    isFetching={this.props.isFetching}
+                />
             </div>
             <div className={s.Weather5Day}>
                 <Weather5Day getWeather5DayThunkCreator={this.props.getWeather5DayThunkCreator}
-                             Weather5Day={this.props.Weather5Day}/>
+                             Weather5Day={this.props.Weather5Day}
+                             isFetching={this.props.isFetching}
+                />
             </div>
         </div>
 

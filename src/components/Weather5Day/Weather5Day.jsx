@@ -1,8 +1,14 @@
 import React from "react";
 import s from "./Weather5Day.module.css";
+import Preloader from "../../common/Preloader/Preloader";
+
 
 
 const Weather5Day = (props) => {
+
+    if (props.isFetching) {
+        return <Preloader/>
+    }
 
     let onClickPage = (e) => {
         e.preventDefault()

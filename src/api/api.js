@@ -1,8 +1,9 @@
 import * as axios from "axios";
 
 const instance = axios.create({
-    // baseURL: 'https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/',
-    baseURL: 'http://localhost:8080/api.openweathermap.org/data/2.5/'
+     baseURL: 'https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/',
+    // baseURL: 'http://localhost:8080/api.openweathermap.org/data/2.5/'
+//    это локальный сервер (использовать при превышении числа запросов 200 запросов в 60 мминут)
 })
 
 let apiKey = localStorage.getItem("ApiKey")

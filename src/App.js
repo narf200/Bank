@@ -10,11 +10,11 @@ import WeatherOfChelyabinskContainer from "./components/WeatherOfChelyabinsk/Wea
 
 function App() {
     return (
-        <div className="App-wrapper">
+        <div className=".App-wrapper">
             <Header/>
             <Route path="/" render={() => <RequestAPIContainer/>}/>
             <div className="weather">
-                <PrivateRoute path="/weather" component={ WeatherOfChelyabinskContainer}/>
+                <PrivateRoute path="/weather" component={WeatherOfChelyabinskContainer}/>
             </div>
             <Footer/>
         </div>
